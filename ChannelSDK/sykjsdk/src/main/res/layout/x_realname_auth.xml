@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/x_realname_auth"
+    style="@style/x_common_horizontal_view" >
+
+    <RelativeLayout
+        style="@style/x_common_title">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/x_realname_des"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/x_common_textsize_l" />
+        
+        <LinearLayout
+	           android:id="@+id/x_realname_close"
+	           android:layout_alignParentRight="true"
+	           android:layout_width="wrap_content"
+	           android:layout_height="fill_parent"
+	           android:orientation="horizontal" >
+	
+	           <ImageView
+	               android:layout_width="wrap_content"
+	               android:layout_height="wrap_content"
+	               android:layout_marginRight="16dp"
+	               android:layout_gravity="center_vertical"
+	               android:src="@drawable/x_r_close" />
+	    </LinearLayout> 
+        
+  
+    </RelativeLayout>
+
+    <View
+        style="@style/x_common_divide"
+        android:layout_height="20dp" >
+    </View>
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+    
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/x_realname_tip"
+            android:textColor="@color/x_red"
+            android:textSize="12sp" />        
+        
+    </RelativeLayout>
+    
+    <View
+        style="@style/x_common_divide"
+        android:layout_height="20dp" >
+    </View>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="44dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/x_common_inputbox"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/x_realname_user"
+                android:contentDescription="@string/x_realname_des"
+                android:gravity="center" />
+
+            <com.xxx.sdk.widgets.ExtendEditText
+                android:id="@+id/x_realname_name"
+                android:layout_width="fill_parent"
+                android:layout_height="38dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginStart="7dp"
+                android:background="@android:color/transparent"
+                android:hint="@string/x_real_name_hint"
+                android:inputType="text"
+                android:maxLength="18"
+                android:paddingEnd="3dp"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:paddingStart="3dp"
+                android:textColor="@color/x_login_namepwd"
+                android:textColorHint="@color/x_login_namepwd"
+                android:textSize="@dimen/x_common_textsize_m" />
+        </LinearLayout>
+
+        <View
+            style="@style/x_common_divide"
+            android:layout_height="15dp" >
+        </View>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="44dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/x_common_inputbox"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/x_realname_identify"
+                android:contentDescription="@string/x_realname_des"
+                android:gravity="center" />
+
+            <com.xxx.sdk.widgets.ExtendEditText
+                android:id="@+id/x_realname_identify"
+                android:layout_width="fill_parent"
+                android:layout_height="38dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginStart="7dp"
+                android:background="@android:color/transparent"
+                android:hint="@string/x_real_id_hint"
+                android:maxLength="18"
+                android:paddingEnd="3dp"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:paddingStart="3dp"
+                android:textColor="@color/x_login_namepwd"
+                android:textColorHint="@color/x_login_namepwd"
+                android:textSize="@dimen/x_common_textsize_m" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        style="@style/x_common_divide"
+        android:layout_height="15dp" >
+    </View>
+
+    <Button
+        android:id="@+id/x_realname_go"
+        style="@style/x_but_common"
+        android:text="@string/x_realname_go" />
+
+    <View
+        style="@style/x_common_divide"
+        android:layout_height="30dp" >
+    </View>
+
+</LinearLayout>

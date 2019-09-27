@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="mainText" format="string"/>
+    <declare-styleable name="MainPagerItemView">
+        <attr name="mainText"/>
+    </declare-styleable>
+</resources>

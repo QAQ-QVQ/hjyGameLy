@@ -1,0 +1,10 @@
+{
+    "project": [
+        {
+            "project_name": "project",
+            "class_name": "com.renard.project.Sy233Project",
+            "description": "聚合SDK项目",
+            "version": "1.0.0"
+        }
+    ]
+}

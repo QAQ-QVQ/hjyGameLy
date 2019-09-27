@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="43dp"
+    android:layout_height="45dp">
+        <ImageView
+            android:id="@+id/tysdkn_mainapger_img_icon"
+            android:layout_width="18dp"
+            android:layout_height="17dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/tysdkn_game_normal"
+            />
+        <TextView
+        android:id="@+id/tysdkn_mainapger_img_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:textSize="7sp"
+         />
+</RelativeLayout>

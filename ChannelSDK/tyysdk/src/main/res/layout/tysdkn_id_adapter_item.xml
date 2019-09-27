@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tysdkn_bg_yuanjiao_2"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tysdkn_id_nick"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1.0"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:singleLine="true"
+            android:text="小号1"
+            android:textColor="#ffffffff"
+            android:textSize="14sp" />
+
+        <CheckBox
+            android:id="@+id/tysdkn_cb_current_user"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/tysdkn_icon_checked_green"
+            android:button="@null"
+            android:gravity="center"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tysdkn_id_current"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tysdkn_id_edit"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:drawableRight="@drawable/tysdkn_name_e"
+            android:gravity="center_vertical"
+            android:paddingRight="10dp"
+            android:text=""
+            android:textColor="#ffffffff"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+</LinearLayout>

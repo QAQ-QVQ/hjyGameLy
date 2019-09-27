@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/x_findpwd_help_view"
+    style="@style/x_common_horizontal_view" >
+
+    <RelativeLayout
+        style="@style/x_common_title">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/x_findpwd_help_title"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/x_common_textsize_l" />
+        
+	    <LinearLayout
+	           android:id="@+id/findpwd_help_back"
+	           android:layout_width="wrap_content"
+	           android:layout_height="fill_parent"
+	           android:orientation="horizontal" >
+	           <ImageView
+	               android:layout_width="wrap_content"
+	               android:layout_height="wrap_content"
+	               android:layout_marginLeft="20dp"
+	               android:layout_gravity="center_vertical"
+	               android:src="@drawable/x_ic_back" />
+	    </LinearLayout>         
+        
+    </RelativeLayout>
+
+    <View
+        style="@style/x_common_divide"
+        android:layout_height="30dp" >
+    </View>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/x_common_inputbox"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/x_findpwd_help_website"
+            android:contentDescription="@string/x_findpwd_des"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:gravity="center"
+            android:text="@string/x_findpwd_help_website"
+            android:textColor="@color/x_login_namepwd"
+            android:textSize="@dimen/x_common_textsize_m" />
+
+        <TextView
+            android:id="@+id/x_findpwd_help_website"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="www.baidu.com"
+            android:textColor="@color/x_login_namepwd"
+            android:textSize="@dimen/x_common_textsize_m" />
+    </LinearLayout>
+
+    <View
+        style="@style/x_common_divide"
+        android:layout_height="10dp" >
+    </View>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/x_common_inputbox"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/x_findpwd_help_phone"
+            android:contentDescription="@string/x_findpwd_des"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:gravity="center"
+            android:text="@string/x_findpwd_help_phone"
+            android:textColor="@color/x_login_namepwd"
+            android:textSize="@dimen/x_common_textsize_m" />
+
+        <TextView
+            android:id="@+id/x_findpwd_help_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="021-56565658"
+            android:textColor="@color/x_login_namepwd"
+            android:textSize="@dimen/x_common_textsize_m" />
+    </LinearLayout>
+
+    <View
+        style="@style/x_common_divide"
+        android:layout_height="10dp" >
+    </View>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/x_common_inputbox"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/x_findpwd_help_qq"
+            android:contentDescription="@string/x_findpwd_des"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:gravity="center"
+            android:text="@string/x_findpwd_help_qq"
+            android:textColor="@color/x_login_namepwd"
+            android:textSize="@dimen/x_common_textsize_m" />
+
+        <TextView
+            android:id="@+id/x_findpwd_help_qq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="565068741"
+            android:textColor="@color/x_login_namepwd"
+            android:textSize="@dimen/x_common_textsize_m" />
+    </LinearLayout>
+
+    <View
+        style="@style/x_common_divide"
+        android:layout_height="30dp" >
+    </View>
+
+</LinearLayout>

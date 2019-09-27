@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="loginsdk_transparent">#00000000</color>
+    <color name="loginsdk_blue">#4887d1</color>
+    <color name="loginsdk_gray">#cccccc</color>
+    <color name="paysdk_blue">#0084ff</color>
+    <color name="paysdk_white">#ffffff</color>
+
+    <color name="colorRed">#fd382e</color>
+    <color name="colorBlack">#66000000</color>
+</resources>

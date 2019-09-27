@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#ff1f2228">
+
+
+        <ImageView
+            android:id="@+id/tysdkn_game_pay_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="15dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/tysdkn_recahrge_back_left" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="小号管理"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="用户最多可以创建10个小号，创建后不能删除"
+            android:textColor="#757b8f"
+            android:textSize="11sp" />
+
+        <ListView
+            android:id="@+id/tysdkn_add_id_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="#00000000"
+            android:dividerHeight="8dp"
+            android:listSelector="@null"
+            android:scrollbars="none">
+
+        </ListView>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+ 
+

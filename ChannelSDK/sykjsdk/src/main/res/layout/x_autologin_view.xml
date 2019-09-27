@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/transparent"
+    android:paddingTop="20dp" >
+    
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+		android:layout_margin="20dp"
+	    android:background="@drawable/x_common_corners_bg"
+	    android:orientation="horizontal"
+	    android:visibility="visible" >
+	
+	    <LinearLayout
+	        android:layout_width="0dp"
+	        android:layout_height="fill_parent"
+	        android:layout_margin="0dp"
+	        android:layout_weight="1.0"
+	        android:background="@drawable/x_autologin_corners_bg"
+	        android:gravity="center" >
+	
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:drawableLeft="@drawable/x_autologin_user"
+	            android:drawablePadding="3dp"
+	            android:drawableStart="@drawable/x_autologin_user"
+	            android:paddingLeft="5dp"
+	            android:gravity="center"
+	            android:text="@string/x_autologin_useer"
+	            android:textColor="@color/x_login_findpwd"
+	            android:textSize="@dimen/x_autologin_textsize" />
+	
+	        <TextView
+	            android:id="@+id/x_autologin_username"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:singleLine="true"
+	            android:textColor="@color/x_login_register_faststart"
+	            android:textSize="@dimen/x_autologin_textsize" />
+	    </LinearLayout>
+	
+	    <ImageView
+	        android:layout_width="1px"
+	        android:layout_height="fill_parent"
+	        android:background="@drawable/x_common_vertical_divider"
+	        android:contentDescription="@string/x_login_des" />
+	
+	    <LinearLayout
+	        android:layout_width="0dp"
+	        android:layout_height="fill_parent"
+	        android:layout_margin="10dp"
+	        android:layout_weight="1.0"
+	        android:gravity="center" >
+	
+	        <TextView
+	            android:id="@+id/x_autologin_changeuser"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:drawableLeft="@drawable/x_autologin_changeuser"
+	            android:drawablePadding="3dp"
+	            android:drawableStart="@drawable/x_autologin_changeuser"
+	            android:gravity="center"
+	            android:text="@string/x_autologin_changeuser"
+	            android:textColor="@color/x_login_findpwd"
+	            android:textSize="@dimen/x_autologin_textsize" />
+	    </LinearLayout>
+	
+	</LinearLayout>
+</LinearLayout>

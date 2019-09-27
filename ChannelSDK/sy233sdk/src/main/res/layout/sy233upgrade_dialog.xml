@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="10dp"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/popu_contentview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/sy233popup_bg"
+            android:fitsSystemWindows="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/sy233title"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="正在更新中"
+                android:textColor="@color/sy233black"
+                android:textSize="18dp"
+                />
+            <TextView
+                android:id="@+id/sy233tv_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="正在更新中" />
+
+            <ProgressBar
+                android:layout_margin="10dp"
+                android:id="@+id/sy233progress"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:max="100"
+                android:progress="0" />
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/sy233_ll_btlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tipTextView"
+                android:paddingRight="15dp"
+                android:layout_marginTop="10dp"
+                android:gravity="bottom|right"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/sy233_bt_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:padding="6dp"
+                    android:visibility="gone"
+                    android:text="取消"
+                    android:textColor="@color/sy233blacktextcolor"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/sy233bt_ok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:background="@null"
+                    android:padding="6dp"
+                    android:text="更新"
+                    android:textColor="@color/sy233colorPrimary"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

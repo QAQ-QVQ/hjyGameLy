@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="85dp"
+    android:layout_height="29dp"
+    android:layout_marginTop="103dp"
+    android:layout_marginRight="9dp"
+    android:layout_alignParentRight="true"
+    android:id="@+id/tysdkn_rl_root"
+    >
+    <ImageView
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:background="@drawable/tysdkn_recharge_yubi"
+        android:layout_marginLeft="12dp"
+        android:layout_centerVertical="true"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="宇币支付"
+        android:textSize="8sp"
+        android:textColor="#ffffff"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="33dp"
+        />
+
+    <ImageView
+        android:id="@+id/tysdkn_rl_root_img"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:background="@drawable/tysdkn_rechargetype_select"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        />
+</RelativeLayout>

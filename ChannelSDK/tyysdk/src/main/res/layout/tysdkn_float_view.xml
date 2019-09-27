@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/tyrsdkn_rl_window"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+      >
+
+        <ImageView
+            android:id="@+id/tysdkn_iv_float"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tysdkn_floating_view_icon_norma"/>
+
+        <ImageView
+            android:id="@+id/tysdkn_yyy_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tysdkn_yyy"
+            android:layout_toRightOf="@id/tysdkn_iv_float"
+            android:visibility="gone"
+            tools:visibility="visible"/>
+        <TextView
+            android:id="@+id/tysdkn_float_tv_text"
+            android:text="有新消息"
+            android:textColor="#fff"
+            android:layout_toRightOf="@id/tysdkn_iv_float"
+            android:layout_marginTop="15dp"
+            android:layout_width="61dp"
+            android:layout_height="17dp"
+            android:textSize="11sp"
+            android:gravity="center"
+            android:visibility="invisible"
+            android:background="@drawable/tysdkn_float_text"
+            />
+    </RelativeLayout>
+</RelativeLayout>

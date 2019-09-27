@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sy_big_float_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout 
+        android:id="@+id/all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true">
+
+        <ImageView
+        android:id="@+id/sy_big_float_iv"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/sysdk_floatimg_light_left"
+        android:tag="sy_big_float_iv" 
+        android:layout_marginTop="0dp"/>
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="2.6dp"
+        android:text=""/>
+    </LinearLayout>
+  
+
+    <LinearLayout
+        android:id="@+id/sy_float_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/all"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/sy_float_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="7.5dip"
+            android:layout_marginRight="2dp"
+            android:orientation="vertical"
+            android:tag="sy_float_usercenter" >
+
+            <ImageView
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@null"
+                android:src="@drawable/sysdk_float_usercenter" />
+            
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@null"
+                android:layout_marginTop="2.5dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/sysdk_float_text_usercenter" />
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/sy_float_bindphone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="7.5dip"
+                android:layout_marginRight="2dp"
+                android:orientation="vertical"
+                android:tag="sy_float_bindphone" >
+
+            <ImageView
+                    android:id="@+id/sy_float_bindphone_img"
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="@null"
+                    android:tag="sy_float_bindphone_img"
+                    android:src="@drawable/sysdk_float_bindphone" />
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="@null"
+                    android:layout_marginTop="2.5dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/sysdk_float_text_bindphone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sy_float_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="2dp"
+            android:orientation="vertical"
+            android:tag="sy_float_activity" >
+
+            <ImageView
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@null"
+                android:src="@drawable/sysdk_float_activity" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@null"
+                android:layout_marginTop="2.5dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/sysdk_float_text_activity" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sy_float_gift"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="2dp"
+            android:orientation="vertical"
+            android:tag="sy_float_gift" >
+
+            <ImageView
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/sysdk_float_gift"
+                android:contentDescription="@null" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@null"
+                android:layout_marginTop="2.5dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/sysdk_float_text_gift" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sy_float_gamecenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="2dip"
+            android:orientation="vertical"
+            android:tag="sy_float_gamecenter" >
+
+            <ImageView
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/sysdk_float_gamecenter"
+                android:contentDescription="@null" />
+
+            
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@null"
+                android:layout_marginTop="2.5dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/sysdk_float_text_gamecenter" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

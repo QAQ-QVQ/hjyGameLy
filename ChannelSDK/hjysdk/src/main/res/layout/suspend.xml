@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:id="@+id/suspend_rl"
+    android:focusableInTouchMode="true"
+    android:focusable="true"
+    android:layout_margin="16dp"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/suspend_ln"
+        android:layout_width="match_parent"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:background="@drawable/white_radius_min"
+        android:paddingBottom="10dp"
+        android:layout_height="300dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/suspend_icon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="16dp"
+            />
+            <!--<com.facebook.drawee.view.SimpleDraweeView-->
+                <!--android:id="@+id/suspend_icon"-->
+                <!--android:layout_width="50dp"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:layout_marginLeft="16dp"-->
+                <!--app:placeholderImage="@drawable/img_login_you"-->
+                <!--app:placeholderImageScaleType="fitCenter"-->
+                <!--app:roundAsCircle="true"/>-->
+
+            <TextView
+                android:id="@+id/suspend_nike_name"
+                android:text="游戏名"
+                android:textSize="14sp"
+                android:textColor="@color/sdk_black"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@+id/suspend_icon"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_switch_account"
+                android:text="切换账号"
+                android:textSize="14sp"
+                android:visibility="invisible"
+                android:textColor="@color/sdk_white"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:background="@drawable/theme_radius"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ln_Task"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="40dp">
+            <LinearLayout
+                android:id="@+id/ln_openservice"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@color/sdk_theme"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/img_openservice"
+                    android:src="@drawable/img_openservice"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp" />
+                <TextView
+                    android:id="@+id/tv_openservice"
+                    android:text="开服"
+                    android:textSize="12sp"
+                    android:textColor="@color/sdk_white"
+                    android:layout_marginLeft="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ln_vip"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@color/sdk_white"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/img_vip"
+                    android:src="@drawable/img_vip_x"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp" />
+                <TextView
+                    android:id="@+id/tv_vip"
+                    android:text="VIP"
+                    android:textSize="12sp"
+                    android:textColor="@color/sdk_black"
+                    android:layout_marginLeft="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ln_activity"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@color/sdk_white"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/img_activity"
+                    android:src="@drawable/img_activity_x"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp" />
+                <TextView
+                    android:id="@+id/tv_activity"
+                    android:text="活动"
+                    android:textSize="12sp"
+                    android:textColor="@color/sdk_black"
+                    android:layout_marginLeft="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ln_notice"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@color/sdk_white"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/img_notice"
+                    android:src="@drawable/img_notice_x"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp" />
+                <TextView
+                    android:id="@+id/tv_notice"
+                    android:text="公告"
+                    android:textSize="12sp"
+                    android:textColor="@color/sdk_black"
+                    android:layout_marginLeft="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ln_openservice_select"
+            android:layout_width="wrap_content"
+            android:background="@drawable/theme_radius"
+            android:padding="2dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_openservice_select"
+                android:text="已经开服"
+                android:textSize="12sp"
+                android:textColor="@color/sdk_black"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="@drawable/white_radius"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_closeservice_select"
+                android:text="即将开服"
+                android:textSize="12sp"
+                android:textColor="@color/sdk_white"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="@drawable/theme_radius"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+            <ListView
+                android:id="@+id/suspend_review"
+                android:overScrollMode="never"
+                android:layout_width="match_parent"
+                android:scrollbars="none"
+                android:divider="@null"
+                android:layout_height="150dp"/>
+
+        <include layout="@layout/suspend_detail"
+            android:visibility="gone"/>
+        <LinearLayout
+            android:id="@+id/ln_data_null"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:layout_height="150dp">
+            <ImageView
+                android:src="@drawable/img_null_data"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+            <TextView
+                android:text="今天什么都没有哦~"
+                android:textColor="@color/sdk_gray"
+                android:layout_marginTop="10dp"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

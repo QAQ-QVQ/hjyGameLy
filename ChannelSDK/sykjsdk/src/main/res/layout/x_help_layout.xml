@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:id="@+id/x_help_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone"
+    android:orientation="vertical" >
+	<LinearLayout
+	    android:layout_width="300dp"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/x_corner_login_bg"
+	    android:orientation="vertical" >
+	    <RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="50dp"
+	        android:background="@drawable/x_corner_title" >
+			<LinearLayout 
+			    android:id="@+id/x_help_back"
+			    android:layout_width="wrap_content"
+			    android:layout_height="match_parent"
+			    android:paddingLeft="12dp"
+			    android:paddingRight="12dp"
+			    android:orientation="horizontal"
+			    android:gravity="center_vertical">
+		        <ImageView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/x_ic_back" />
+			</LinearLayout>
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:id="@+id/x_help_title"
+	            android:layout_centerInParent="true"
+	            android:text="@string/x_help_title"
+	            android:textColor="@color/x_white"
+	            android:textSize="18sp" />
+	    </RelativeLayout>
+		
+	    
+	    <RelativeLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="130dp">
+		       <LinearLayout 
+		           android:layout_centerInParent="true"
+		           android:layout_width="wrap_content"
+		           android:layout_height="wrap_content"
+		           android:gravity="center_horizontal"
+		           android:orientation="vertical">
+			        <TextView 
+			            android:id="@+id/x_help_content"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="@string/x_help_content"
+			            android:textSize="16sp"
+			            android:textColor="@color/x_txt_gray2"/>
+			        <TextView 
+			            android:id="@+id/x_help_contact"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_marginTop="16dp"
+			            android:text="QQ:"
+			            android:textSize="14sp"
+		                android:drawableLeft="@drawable/x_autologin_user"
+		                android:drawablePadding="3dp"
+		                android:drawableStart="@drawable/x_autologin_user"			            
+			            android:textColor="@color/x_txt_gray"
+			            android:paddingTop="5dp"
+			            android:paddingBottom="5dp"
+			            android:paddingLeft="15dp"
+			            android:paddingRight="15dp"
+			            android:gravity="center"
+			            android:background="@drawable/x_corner_contact_bg"/>
+	        	</LinearLayout>
+	    </RelativeLayout>
+	    
+        <Button
+            android:id="@+id/x_help_back_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/x_corner_button"
+            android:text="@string/x_help_ok"
+            android:textColor="@color/x_white"
+            android:textSize="15sp" />	    
+	    
+	</LinearLayout>
+</LinearLayout>

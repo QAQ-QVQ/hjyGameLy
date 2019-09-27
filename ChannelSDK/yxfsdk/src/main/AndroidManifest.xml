@@ -1,0 +1,186 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.renard.sdk" >
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.webkit.permission.PLUGIN"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+
+    <uses-feature android:name="android.hardware.camera"/>
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.hardware.camera.autofocus"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.RECORD_VIDEO"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <!-- 11月15号新增 -->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <!--11-28新增加的2个权限-->
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"/>
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER"/>
+
+    <application
+        android:usesCleartextTraffic="true">
+        <!--android:name="com.yaoyue.release.YYSDKApplication"-->
+        <!--android:usesCleartextTraffic="true"-->
+        <!--android:label="@string/app_name">-->
+
+        <activity
+            android:name="com.game.sdk.ui.mainUI.LoginPhoneActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.SDKTransparent"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <activity
+            android:name="com.game.sdk.ui.mainUI.LoginPwdActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.SDKTransparent"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <activity
+            android:name="com.game.sdk.ui.mainUI.LoginQuickActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.SDKTransparent"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <activity
+            android:name="com.game.sdk.ui.mainUI.LoginQuickResultActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.SDKTransparent"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <activity
+            android:name="com.game.sdk.ui.mainUI.ForgetChoseActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.SDKTransparent"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <activity
+            android:name="com.game.sdk.ui.mainUI.ForgetPwdActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.SDKTransparent"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <activity
+            android:name="com.game.sdk.ui.mainUI.ForgetPwdChooseActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.SDKTransparent"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <activity
+            android:name="com.game.sdk.ui.mainUI.ForgetPwdPhoneActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.SDKTransparent"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <activity
+            android:name="com.game.sdk.ui.mainUI.ForgetPwdEmailActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.SDKTransparent"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <activity
+            android:name="com.game.sdk.ui.mainUI.LoginYxfSeleAccActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.SDKTransparent"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <activity
+            android:name="com.game.sdk.ui.mainUI.LoginGameSeleAccActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.SDKTransparent"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!--权限管理-->
+        <activity
+            android:name="com.game.sdk.ui.mainUI.PermissonActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.SDKTransparent"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <activity
+            android:name="com.game.sdk.ui.mainUI.FloatWebActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Theme.SDKTransparent"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <activity
+            android:name="com.game.sdk.ui.mainUI.GetInfoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <service android:name="com.game.sdk.SDKAppService">
+            <intent-filter android:priority="1000">
+                <action android:name="SDKService"/>
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="screenOrientation"
+            android:value="screenOrientation:0"></meta-data>
+        <meta-data
+            android:name="YG_APPID"
+            android:value="YG_APPID:190628945793"></meta-data>
+        <!--闪屏-->
+        <meta-data
+            android:name="YG_SPLASH"
+            android:value="YG_SPLASH:0"></meta-data>
+        <!-- SDK_APPID的值android:value="2"在4.0没有意义，但是该meta-data要保留在清单文件 -->
+        <meta-data
+            android:name="SDK_APPID"
+            android:value="9230"/>
+        <!-- SDK_GAMEID的值android:value="5"在4.0有意义，运营会在qq群分配参数给你们去替换 -->
+        <meta-data
+            android:name="SDK_GAMEID"
+            android:value="9947"/>
+        <meta-data
+            android:name="SDK_AGENT"
+            android:value="default"/>
+         <!--provider authorities的值${applicationId}换成你们自己的包名-->
+        <provider
+            android:name="com.game.sdk.provider.GameFileProvider"
+            android:authorities="com.renard.sdk"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/a_sdk_file_paths"/>
+        </provider>
+        <activity android:name="com.anjiu.buff.mvp.ui.activity.GameInfoActivity"></activity>
+    </application>
+</manifest>

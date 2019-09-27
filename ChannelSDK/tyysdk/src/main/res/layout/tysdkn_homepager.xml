@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/tysdkn_ll_home_top"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#1F2228"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/tysdkn_curgame_recharge"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="游戏优惠"
+                android:textColor="#FFF"
+                android:textSize="12sp" />
+            <ImageView
+                android:id="@+id/tysdkn_popwind_discount_item_red"
+                android:layout_width="7dp"
+                android:layout_height="7dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="28dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/tysdkn_red_p"
+               />
+
+
+            <View
+                android:id="@+id/tysdkn_curgame_recharge_view"
+                android:layout_width="47dp"
+                android:layout_height="3dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="#FF4366FF" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tysdkn_curgame_gift"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="礼包中心"
+                android:textColor="#FFF"
+                android:textSize="12sp" />
+            <ImageView
+                android:id="@+id/tysdkn_popwind_gift_item_red"
+                android:layout_width="7dp"
+                android:layout_height="7dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="28dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/tysdkn_red_p"
+                />
+
+            <View
+                android:id="@+id/tysdkn_curgame_gift_view"
+                android:layout_width="47dp"
+                android:layout_height="3dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="#FF4366FF"
+                android:visibility="invisible"
+
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tysdkn_curgame_account"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="账号交易"
+                android:textColor="#FFF"
+                android:textSize="12sp" />
+
+            <View
+                android:id="@+id/tysdkn_curgame_account_view"
+                android:layout_width="47dp"
+                android:layout_height="3dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="#FF4366FF"
+                android:visibility="invisible"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_below="@id/tysdkn_ll_home_top"
+        android:id="@+id/tysdkn_curgame_fra"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         />
+    <!--android:background="#84020202"-->
+</RelativeLayout>

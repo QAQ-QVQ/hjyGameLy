@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="fzo_d3d2d2">#d3d2d2</color>
+    <color name="fzo_dialog_bg">#6e312a3e</color>
+    <color name="fzo_money">#ffa60a</color>
+    <color name="fzo_selected">#8f5bce</color>
+    <color name="fzo_translant">#00000000</color>
+    <color name="fzo_white">#ffffff</color>
+    <string name="app_name">地灵曲</string>
+
+    <style name="AppTheme" >
+        <!-- Customize your theme here. -->
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+    </style>
+    <style name="SplashMain" >
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="SplashTheme" >
+        <item name="android:windowBackground">@drawable/splash</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+    </style>
+    <style name="fzo_edittext">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginRight">11dp</item>
+        <item name="android:layout_marginLeft">11dp</item>
+        <item name="android:inputType">textVisiblePassword</item>
+        <item name="android:textColor">@color/fzo_white</item>
+        <item name="android:textColorHint">@color/fzo_d3d2d2</item>
+        <item name="android:background">@null</item>
+        <item name="android:textCursorDrawable">@drawable/my_cursor</item>
+    </style>
+    <style name="fzo_img">
+        <item name="android:layout_width">12dp</item>
+        <item name="android:layout_height">13dp</item>
+    </style>
+    <style name="fzo_img2">
+        <item name="android:layout_width">17dp</item>
+        <item name="android:layout_height">17dp</item>
+        <item name="android:visibility">invisible</item>
+        <item name="android:background">@drawable/ic_fzo_clear</item>
+    </style>
+    <style name="fzo_img77">
+        <item name="android:layout_width">76dp</item>
+        <item name="android:layout_height">76dp</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_margin">1dp</item>
+    </style>
+    <style name="fzo_img78_">
+        <item name="android:layout_width">78dp</item>
+        <item name="android:layout_height">78dp</item>
+        <item name="android:visibility">invisible</item>
+        <item name="android:layout_alignParentTop">true</item>
+    </style>
+    <style name="fzo_linearlayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">43dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:layout_marginRight">4dp</item>
+        <item name="android:layout_marginTop">13dp</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:background">@drawable/fzo_bg_corners_0px_white</item>
+    </style>
+    <style name="fzo_relativelayout">
+        <item name="android:layout_width">78dp</item>
+        <item name="android:layout_height">95dp</item>
+    </style>
+    <style name="fzo_text_12" parent="@style/fzo_text_parent">
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="fzo_text_12_rv" parent="@style/fzo_text_12">
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+    <style name="fzo_text_15" parent="@style/fzo_text_parent">
+        <item name="android:textSize">15sp</item>
+    </style>
+    <style name="fzo_text_parent">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/fzo_white</item>
+    </style>
+</resources>

@@ -1,0 +1,85 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.renard.sdk">
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true" >
+        <!-- sysdk的组件声明   start-->
+        <activity android:name="com.sy.sdk.SySDKActivity"
+            android:configChanges="keyboardHidden|keyboard|screenLayout|screenSize"
+            android:theme="@android:style/Theme.Dialog">
+        </activity>
+        <activity
+            android:name="com.zwxpay.android.h5_library.WebViewActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.sy.nsdk.NsdkH5WebView"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false" android:screenOrientation="portrait" >
+        </activity>
+        <!-- 新版银联3.5.5组件 -->
+        <uses-library
+            android:name="org.simalliance.openmobileapi"
+            android:required="false" />
+
+        <activity
+            android:name="com.unionpay.uppay.PayActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:excludeFromRecents="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.unionpay.UPPayWapActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- 新版银联3.5.5组件 -->
+        <!-- 支付宝 -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+        <!-- 支付宝 -->
+        <!-- 浮标显示 activity -->
+        <!-- 浮标显示 activity -->
+        <activity
+            android:name="com.sy.sdk.activity.FloatWindowActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenLayout|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name="com.sy.sdk.activity.FloatPersonalActivity"
+            android:configChanges="keyboardHidden|keyboard|screenLayout|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <!-- sysdk的组件声明  end-->
+    </application>
+    <!--sysdk 权限声明-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.webkit.permission.PLUGIN" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <!--sysdk 权限声明-->
+
+</manifest>

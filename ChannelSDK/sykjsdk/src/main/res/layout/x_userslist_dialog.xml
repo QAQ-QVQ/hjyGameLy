@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/x_dialog_layout"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/x_userlist_rectangle_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/x_userlist_rectangle_bg"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/x_userlist_remove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/x_userlist_remove" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:text="@string/x_user_list_title"
+            android:textColor="@color/x_userlist_hint"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <View style="@style/x_account_list.Divider.Horizontal" />
+
+    <ListView
+        android:id="@+id/x_userlist"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="#ffdfdfdf"
+        android:dividerHeight="1dp" />
+
+</LinearLayout>

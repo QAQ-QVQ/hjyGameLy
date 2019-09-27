@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/tysdkn_window_msg_location"
+        android:layout_width="343dp"
+        android:layout_height="27dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:background="@drawable/tysdkn_bg_window_public"
+        >
+    <TextView
+        android:id="@+id/tysdkn_window_msg_text"
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="47dp"
+        />
+    <ImageView
+        android:id="@+id/tysdkn_window_msg_dismiss"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:background="@drawable/tysdkn_window_close_blue"
+        android:clickable="true"
+        android:layout_marginRight="6dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        />
+    </RelativeLayout>
+</RelativeLayout>

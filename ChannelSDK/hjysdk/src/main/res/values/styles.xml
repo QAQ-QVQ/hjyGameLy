@@ -1,0 +1,72 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@android:style/Theme.Translucent.NoTitleBar">
+        <!-- Customize your theme here. -->
+
+    </style>
+
+    <!--<style name="AppTheme.NoBar">-->
+        <!--<item name="windowNoTitle">true</item>-->
+        <!--<item name="android:windowFullscreen">true</item>-->
+    <!--</style>-->
+
+    <style name="loginsdk_style_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/loginsdk_transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:scrollHorizontally">true</item>
+    </style>
+    <!--dialog的样式-->
+    <style name="MyDialogStyleBottom" parent="android:style/Theme.Dialog">
+
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">false</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 无标题 -->
+        <!--<item name="android:windowNoTitle">true</item>-->
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 模糊 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!--设置状态栏颜色-->
+        <!--<item name="colorPrimaryDark">@android:color/transparent</item>-->
+
+    </style>
+
+    <!--dialog的样式-->
+    <style name="MyDialogStyleLandscape" parent="android:style/Theme.Dialog">
+
+        <!--<item name="android:layout_marginLeft">16dp</item>-->
+        <!--<item name="android:layout_marginRight">16dp</item>-->
+        <!--<item name="android:layout_marginTop">12dp</item>-->
+        <!--<item name="android:layout_marginBottom">12dp</item>-->
+
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">false</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 无标题 -->
+        <!--<item name="android:windowNoTitle">true</item>-->
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 模糊 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!--设置状态栏颜色-->
+        <!--<item name="colorPrimaryDark">@android:color/transparent</item>-->
+    </style>
+
+    <style name="titlestyle">
+
+        <item name="android:textSize">12sp</item>
+    </style>
+
+</resources>

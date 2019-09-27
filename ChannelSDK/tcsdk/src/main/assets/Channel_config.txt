@@ -1,0 +1,10 @@
+{
+    "channel": [
+        {
+            "channel_name": "channel",
+            "class_name": "com.renard.sdk.TcSdk",
+            "description": "天橙渠道SDK",
+            "version": "1.0.0"
+        }
+    ]
+}

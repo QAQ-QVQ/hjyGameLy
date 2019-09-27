@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#ff1f2228"
+    android:orientation="vertical"
+    >
+    <ListView
+        android:id="@+id/tysdkn_main_left_lisview"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:divider="#00000000"
+        android:listSelector="@null"
+        android:scrollbars="none">
+    </ListView>
+</LinearLayout>

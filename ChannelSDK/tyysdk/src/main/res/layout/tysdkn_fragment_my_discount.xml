@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#ff1f2228">
+
+        <ImageView
+            android:id="@+id/tysdkn_iv_my_discount_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:padding="15dp"
+            android:src="@drawable/tysdkn_recahrge_back_left" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="我的优惠券"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#FF262D3B"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/tysdkn_rl_unused"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tysdkn_tv_unused"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="未使用"
+                android:textColor="#FFF"
+                android:textSize="12sp" />
+
+            <View
+                android:id="@+id/tysdkn_v_unused"
+                android:layout_width="47dp"
+                android:layout_height="3dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="#FF4366FF" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tysdkn_rl_have_used"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tysdkn_tv_have_used"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="已使用"
+                android:textColor="#FF6C7484"
+                android:textSize="12sp" />
+
+            <View
+                android:id="@+id/tysdkn_v_have_used"
+                android:layout_width="47dp"
+                android:layout_height="3dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="#FF4366FF"
+                android:visibility="invisible"
+
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tysdkn_rl_have_expired"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tysdkn_tv_have_expired"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="已过期"
+                android:textColor="#FF6C7484"
+                android:textSize="12sp" />
+
+            <View
+                android:id="@+id/tysdkn_v_have_expired"
+                android:layout_width="47dp"
+                android:layout_height="3dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="#FF4366FF"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!--<FrameLayout-->
+    <!--android:id="@+id/tysdkn_fl_discount_contain"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="#90020202"/>-->
+    <include layout="@layout/tysdkn_progressbar" />
+
+
+    <ListView
+        android:id="@+id/tysdkn_lv_my_discount"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:divider="@null"
+        android:scrollbars="none" />
+</LinearLayout>

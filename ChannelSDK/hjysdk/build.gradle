@@ -1,0 +1,49 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 26
+
+    useLibrary 'org.apache.http.legacy'
+
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    signingConfigs {
+        config {
+            keyAlias store_key_alias
+            storeFile file(store_file)
+            keyPassword store_key_password
+            storePassword store_password
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support:recyclerview-v7:26.1.0'
+    //    implementation 'com.android.support:design:26.1.0'
+    //    testImplementation 'junit:junit:4.12'
+    //    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    //    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    compile project(path: ':common')
+    compile project(path: ':alipay')
+    compile project(path: ':wechat')
+    //支付宝
+    implementation files('libs/weiboSDKCore.jar')
+    implementation files('libs/glide-3.8.0.jar')
+    implementation files('libs/gson-2.7.jar')
+    compile project(path: ':issuesdk')
+}

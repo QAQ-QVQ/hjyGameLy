@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1F2228"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        >
+
+        <ImageView
+            android:id="@+id/tysdkn_game_pay_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="15dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/tysdkn_recahrge_back_left" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="选择优惠券"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:textSize="16sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="51dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:background="@drawable/tysdkn_recharge_item_nor"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#999999"
+            android:text="不使用优惠券"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            />
+        <CheckBox
+            style="@style/tysdkn_selct_cir"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            />
+    </RelativeLayout>
+</RelativeLayout>

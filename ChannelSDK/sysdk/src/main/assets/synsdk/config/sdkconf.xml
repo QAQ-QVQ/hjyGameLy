@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configer>
+    <landscape value="true" />
+	<channelid value="1" />
+	<subchannelid value="0" /> 
+	<debug value="false" />
+	<sdkversion value="1.0.2" />
+	<logmodel value="1" />
+	<component type="sdk" value="com.sy.nsdk.sysdk.v1_0_0.SyNSdk" />
+	<component type="activity" value="com.sy.nsdk.sysdk.v1_0_0.SyNSdk" />
+</configer>

@@ -1,0 +1,41 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 26
+
+
+
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(path: ':common')
+    //    implementation files('libs/alipaySingle-20170510.jar')
+    implementation files('libs/gson-2.7.jar')
+    implementation files('libs/ipaynow_base_v2.1.5_api1.0.0.jar')
+    implementation files('libs/ipaynow_wechatwp_v2.0.2.jar')
+    //    implementation files('libs/open_sdk_r6008_lite.jar')
+    implementation files('libs/tyysdk.jar')
+    implementation files('libs/wftsdk3.0.jar')
+    implementation files('libs/wftsdk_wap_2.1.jar')
+    compile project(path: ':alipay')
+    compile project(path: ':wechat')
+    compile project(path: ':issuesdk')
+}

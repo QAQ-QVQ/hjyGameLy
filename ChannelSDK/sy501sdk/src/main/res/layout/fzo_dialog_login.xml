@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="344dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/fzo_dialog_bg"
+    android:orientation="vertical"
+    android:paddingLeft="18dp"
+    android:paddingRight="18dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp">
+
+        <LinearLayout
+            android:id="@+id/fzo_lv_top"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1.0" />
+
+            <TextView
+                android:id="@+id/fzo_tv_login"
+                android:layout_width="78dp"
+                android:layout_height="34dp"
+                android:background="@drawable/fzo_bg_corners_180px_selected"
+                android:gravity="center"
+                android:text="登录"
+                android:textColor="@color/fzo_white"
+                android:textSize="19sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="2.0" />
+
+            <TextView
+                android:id="@+id/fzo_tv_regist"
+                android:layout_width="78dp"
+                android:layout_height="34dp"
+                android:background="@drawable/fzo_bg_corners_180px_normals"
+                android:gravity="center"
+                android:text="注册"
+                android:textColor="@color/fzo_white"
+                android:textSize="19sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1.0" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/fzo_top_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.6px"
+            android:layout_below="@id/fzo_lv_top"
+            android:background="@color/fzo_white" />
+
+        <LinearLayout
+            android:id="@+id/fzo_lv_bt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/fzo_lv_qa"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="invisible">
+
+                <ImageView
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:layout_marginLeft="22dp"
+                    android:background="@drawable/ic_fzo_qa" />
+
+
+                <TextView
+                    android:id="@+id/fzo_tv_qa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="9dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="请输入密码"
+                    android:textColor="@color/fzo_selected"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/fzo_tv_control"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/fzo_selected"
+                android:gravity="center"
+                android:text="登录"
+                android:textColor="@color/fzo_white"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+
+        <ScrollView
+            android:id="@+id/sv_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/fzo_lv_bt"
+            android:layout_below="@id/fzo_top_line"
+            android:scrollbars="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/fzo_lv_qa"
+                    android:layout_below="@id/fzo_top_line"
+                    android:orientation="vertical">
+
+                    <LinearLayout style="@style/fzo_linearlayout">
+
+                        <ImageView
+                            style="@style/fzo_img"
+                            android:background="@drawable/ic_fzo_account" />
+
+                        <EditText
+                            android:id="@+id/fzo_ev_account"
+                            style="@style/fzo_edittext"
+                            android:hint="请输入游戏账号"
+                            android:inputType="textVisiblePassword" />
+
+                        <ImageView
+                            android:id="@+id/fzo_img_account"
+                            style="@style/fzo_img2" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/fzo_linearlayout"
+                        android:layout_marginTop="17dp">
+
+                        <ImageView
+                            style="@style/fzo_img"
+                            android:background="@drawable/ic_fzo_password" />
+
+                        <EditText
+                            android:id="@+id/fzo_ev_psd"
+                            style="@style/fzo_edittext"
+                            android:hint="请输入密码"
+                            android:inputType="textPassword" />
+
+                        <ImageView
+                            android:id="@+id/fzo_img_psd"
+                            style="@style/fzo_img2"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fzo_lv_register"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout style="@style/fzo_linearlayout">
+
+                            <ImageView
+                                style="@style/fzo_img"
+                                android:background="@drawable/ic_fzo_name" />
+
+                            <EditText
+                                android:id="@+id/fzo_ev_name"
+                                style="@style/fzo_edittext"
+                                android:hint="防沉迷请输入真实姓名"
+                                android:inputType="text" />
+
+                            <ImageView
+                                android:id="@+id/fzo_img_name"
+                                style="@style/fzo_img2"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+                        <LinearLayout style="@style/fzo_linearlayout">
+
+                            <ImageView
+                                style="@style/fzo_img"
+                                android:background="@drawable/ic_fzo_card" />
+
+                            <EditText
+                                android:id="@+id/fzo_ev_card"
+                                style="@style/fzo_edittext"
+                                android:hint="防沉迷请输入身份证号"
+                                android:inputType="textVisiblePassword" />
+
+                            <ImageView
+                                android:id="@+id/fzo_img_card"
+                                style="@style/fzo_img2"
+                                android:visibility="gone" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+
+</RelativeLayout>

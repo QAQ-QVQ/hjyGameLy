@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="31dp"
+        android:id="@+id/tysdkn_ll_layout"
+        android:background="@drawable/tysdkn_recharge_choose_stroke_nor"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="5dp"
+        android:orientation="horizontal"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        >
+        <TextView
+            android:id="@+id/tysdkn_tv_type_new"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="最新发布"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:textColor="#999999"
+            />
+        <TextView
+            android:id="@+id/tysdkn_tv_type_low"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="价格最低"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:textColor="#999999"
+            />
+        <TextView
+            android:id="@+id/tysdkn_tv_type_high"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="价格最高"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:textColor="#999999"
+            />
+
+    </LinearLayout>
+
+    <com.sdk.tysdk.ui.view.PullToRefreshLayout
+        android:id="@+id/tysdkn_refresh_view"
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tysdkn_ll_layout">
+
+        <include layout="@layout/tysdkn_refresh_head" />
+
+        <com.sdk.tysdk.ui.view.PullableListView
+            android:id="@+id/tysdkn_list_account_trade"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null" />
+
+        <include layout="@layout/tysdkn_load_more" />
+    </com.sdk.tysdk.ui.view.PullToRefreshLayout>
+    <RelativeLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <include layout="@layout/tysdkn_progressbar" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/tysdkn_ll_nothing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/tysdkn_nothing" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="暂无数据"
+            android:textSize="11sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tysdkn_tv_open_app"
+                android:layout_width="64dp"
+                android:layout_height="29dp"
+                android:background="@drawable/tysdkn_blue_r10"
+                android:gravity="center"
+                android:text="卖账号"
+                android:textColor="#ffffff"
+                android:textSize="11sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

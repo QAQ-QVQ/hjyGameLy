@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#00ffffff" >
+
+    <RelativeLayout
+        android:id="@+id/x_float_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00ffffff" >
+
+        <RelativeLayout
+            android:id="@+id/x_xmt_msg"
+            android:layout_width="200dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/x_c_rect_banyuan"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/x_xmt_title1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/x_xmt1"
+                    android:gravity="center_horizontal"
+                    android:text="@string/x_f_center"
+                    android:textColor="@color/x_appDarkGrey"
+                    android:textSize="10dp" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/x_cut_line_gray" />
+
+                <TextView
+                    android:id="@+id/x_xmt_title2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/x_xmt3"
+                    android:gravity="center_horizontal"
+                    android:text="@string/x_f_libao"
+                    android:textColor="@color/x_appDarkGrey"
+                    android:textSize="10dp" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/x_cut_line_gray" />
+
+                <TextView
+                    android:id="@+id/x_xmt_title3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/x_xmt2"
+                    android:gravity="center_horizontal"
+                    android:text="@string/x_f_switch"
+                    android:textColor="@color/x_appDarkGrey"
+                    android:textSize="10dp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/x_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#00000000"
+            android:scaleType="centerInside"
+            android:src="@drawable/x_contacticon" />
+    </RelativeLayout>
+
+</RelativeLayout>

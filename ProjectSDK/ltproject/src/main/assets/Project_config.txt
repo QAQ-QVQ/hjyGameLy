@@ -1,0 +1,10 @@
+{
+    "project": [
+        {
+            "project_name": "project",
+            "class_name": "com.renard.project.ltProject",
+            "description": "六天网络SDK项目",
+            "version": "1.0.0"
+        }
+    ]
+}

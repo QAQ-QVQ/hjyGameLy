@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:visibility="visible" >
+
+    <!-- 用户登录布局 -->
+
+    <include layout="@layout/x_login_view" />
+
+    <!-- 用户注册布局 -->
+
+    <include layout="@layout/x_register_user_view" />
+
+    <include layout="@layout/x_register_phone_view" />
+
+    <!-- 账号找回方式布局 -->
+
+    <include layout="@layout/x_findpwd_select" />
+
+    <!-- 通过手机号找回账号布局 -->
+
+    <include layout="@layout/x_findpwd_phone_one" />
+
+    <include layout="@layout/x_findpwd_phone_two" />
+
+    <!-- 通过帮助找回账号布局 -->
+
+    <include layout="@layout/x_findpwd_help" />
+
+    <!-- 绑定手机号布局 -->
+
+    <include layout="@layout/x_bindphone_view" />
+
+    <!-- 实名认证布局 -->
+
+    <include layout="@layout/x_realname_auth" />
+
+</RelativeLayout>

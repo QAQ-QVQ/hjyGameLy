@@ -1,0 +1,10 @@
+{
+    "project": [
+        {
+            "project_name": "project",
+            "class_name": "com.renard.project.yxfProject",
+            "description": "游戏fanSDK项目",
+            "version": "1.0.0"
+        }
+    ]
+}

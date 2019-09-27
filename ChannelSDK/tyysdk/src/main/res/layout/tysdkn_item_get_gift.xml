@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="4dp"
+    android:paddingLeft="6dp"
+    android:paddingRight="6dp"
+    android:paddingTop="4dp">
+
+    <LinearLayout
+        android:id="@+id/tysdkn_ll_gift_info"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:background="@drawable/tysdkn_bg_gift_center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tysdkn_tv_gift_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="礼包名称"
+                android:textColor="#FF5069"
+                android:textSize="14sp"
+                android:singleLine="true"
+                 />
+
+            <TextView
+                android:id="@+id/tysdkn_tv_gift_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="7dp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="礼包描述"
+                android:textColor="#ffffff"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/tysdkn_bt_gift_center"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/tysdkn_button_yuanjiao_selector"
+            android:text="领取"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+    </LinearLayout>
+</RelativeLayout>

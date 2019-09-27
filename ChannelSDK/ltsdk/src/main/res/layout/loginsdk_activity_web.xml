@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+	android:background="#ed7419"
+	android:visibility="gone"
+    >
+	<TextView
+		android:id="@+id/tv_title"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true"
+		android:textColor="#ffffff"
+		android:text=""
+		/>
+    <ImageButton
+		android:id="@+id/btn_back"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:paddingLeft="15dp"
+		android:paddingRight="10dp"
+		android:layout_centerVertical="true"
+		android:src="@drawable/loginsdk_a024_white"
+		android:background="@color/loginsdk_transparent"
+		/>
+
+</RelativeLayout>
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		>
+    <com.ydgame.web.jsbridge.BridgeWebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+		<ProgressBar
+			android:id="@+id/progressBar"
+			style="?android:attr/progressBarStyleHorizontal"
+			android:layout_width="match_parent"
+			android:layout_height="2dp"
+			android:progressDrawable="@drawable/loginsdk_progressbar_web"
+			android:visibility="gone"
+			/>
+	</RelativeLayout>
+</LinearLayout>

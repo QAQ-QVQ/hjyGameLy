@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="344dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/fzo_dialog_bg"
+    android:orientation="vertical"
+    android:paddingLeft="25dp"
+    android:paddingRight="25dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="14dp">
+
+
+        <TextView
+            android:id="@+id/fzo_tv_control"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/fzo_selected"
+            android:gravity="center"
+            android:text="开始支付"
+            android:textColor="@color/fzo_white"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/fzo_lv_qa"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:layout_above="@id/fzo_tv_control"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginLeft="22dp"
+                android:background="@drawable/ic_fzo_qa" />
+
+
+            <TextView
+                android:id="@+id/fzo_tv_qa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:text="请选择支付方式"
+                android:textColor="@color/fzo_selected"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/sv_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/fzo_lv_qa"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_alignParentTop="true"
+                    android:gravity="center|bottom"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="11dp"
+                        android:layout_height="14dp"
+                        android:layout_marginBottom="3dp"
+                        android:background="@drawable/ic_fzo_pay_yuan" />
+
+                    <TextView
+                        android:id="@+id/fzo_tv_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="46dp"
+                        android:layout_marginLeft="2dp"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="18"
+                        android:textColor="@color/fzo_money"
+                        android:textSize="45sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/fzo_tv_slogan"
+                    style="@style/fzo_text_15"
+                    android:layout_marginTop="12dp"
+                    android:text="（充值18元人民币，活的大量元宝）" />
+
+                <TextView
+                    android:id="@+id/fzo_tv_account"
+                    style="@style/fzo_text_15"
+                    android:layout_marginTop="5dp"
+                    android:text="充值账户：djdjdkjrhrbvddhd" />
+
+                <View
+                    android:id="@+id/fzo_top_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.6px"
+                    android:layout_below="@id/fzo_lv_top"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/fzo_white" />
+
+                <TextView
+                    style="@style/fzo_text_15"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="选择支付方式"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/fzo_lv_qa"
+                    android:layout_below="@id/fzo_top_line"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/fzo_rv_pay_ali"
+                        style="@style/fzo_relativelayout">
+
+
+                        <ImageView
+                            style="@style/fzo_img77"
+                            android:background="@drawable/ic_fzo_pay_ali" />
+
+                        <ImageView
+                            android:id="@+id/fzo_iv_pay_ali"
+                            style="@style/fzo_img78_"
+                            android:background="@drawable/ic_fzo_pay_selected" />
+
+                        <TextView
+                            style="@style/fzo_text_12_rv"
+                            android:text="支付宝" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1.0" />
+
+                    <RelativeLayout
+                        android:id="@+id/fzo_rv_pay_wx"
+                        style="@style/fzo_relativelayout">
+
+
+                        <ImageView
+                            style="@style/fzo_img77"
+                            android:background="@drawable/ic_fzo_pay_wx" />
+
+                        <ImageView
+                            android:id="@+id/fzo_iv_pay_wx"
+                            style="@style/fzo_img78_"
+                            android:background="@drawable/ic_fzo_pay_selected" />
+
+                        <TextView
+                            style="@style/fzo_text_12_rv"
+                            android:text="微信" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1.0" />
+
+                    <RelativeLayout
+                        android:id="@+id/fzo_rv_pay_coin"
+                        style="@style/fzo_relativelayout">
+
+
+                        <ImageView
+                            style="@style/fzo_img77"
+                            android:background="@drawable/ic_fzo_pay_coin" />
+
+                        <ImageView
+                            android:id="@+id/fzo_iv_pay_coin"
+                            style="@style/fzo_img78_"
+                            android:background="@drawable/ic_fzo_pay_selected" />
+
+                        <TextView
+                            style="@style/fzo_text_12_rv"
+                            android:text="平台币支付" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+
+</RelativeLayout>

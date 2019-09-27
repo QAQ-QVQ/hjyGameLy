@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    >
+
+    <LinearLayout
+        android:id="@+id/popu_contentview"
+        android:layout_width="280dp"
+        android:layout_height="130dp"
+        android:layout_gravity="center"
+        android:background="@drawable/sy233popup_bg"
+        android:fitsSystemWindows="true"
+        android:gravity="center"
+        android:orientation="vertical">
+        <LinearLayout
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/sy233bt_sub"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:background="@mipmap/sy233_sub"/>
+
+            <TextView
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:textSize="17sp"
+                android:textColor="#01321a"
+                android:background="#b4f4d5"
+                android:id="@+id/sy233tv_speed"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="x1"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/sy233bt_add"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:background="@mipmap/sy233_add"
+                />
+        </LinearLayout>
+
+       <LinearLayout
+           android:layout_marginTop="20dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+           android:orientation="horizontal">
+
+           <Button
+               android:id="@+id/sy233bt_stop"
+               android:layout_width="26dp"
+               android:layout_height="26dp"
+               android:background="@mipmap/sy233_pause"
+               />
+       </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>
+

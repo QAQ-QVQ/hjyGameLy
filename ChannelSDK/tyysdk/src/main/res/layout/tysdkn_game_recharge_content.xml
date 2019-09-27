@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:background="#ff1f2228"
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+
+            <ImageView
+                android:id="@+id/tysdkn_game_pay_back"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_centerVertical="true"
+                android:padding="15dp"
+                android:src="@drawable/tysdkn_recahrge_back_left" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="游戏充值"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/tysdkn_tv_cz_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="11dp"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="消费记录"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+        </RelativeLayout>
+        <ProgressBar
+            android:id="@+id/tysdkn_progressbar"
+            style="@android:style/Widget.ProgressBar"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:layout_marginTop="80dp"
+            android:layout_centerHorizontal="true"
+            android:indeterminateDrawable="@drawable/tysdkn_progressbar_rotate" />
+        <RelativeLayout
+            android:id="@+id/tysdkn_rl_pay_page"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="45dp"
+                android:background="#262D3B">
+
+            <TextView
+                android:id="@+id/tysdkn_game_pay_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="9dp"
+                android:text="订单金额: ￥10.00"
+                android:textColor="#ffffff"
+                android:textSize="11sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="12dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/tysdkn_game_pay_zk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="9dp"
+                    android:text="当前折扣:10折"
+                    android:textColor="#ffffff"
+                    android:textSize="11sp" />
+
+                <LinearLayout
+                    android:id="@+id/tysdkn_ll_game_pay_jf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    tools:visibility="visible"
+                    android:layout_marginTop="9dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tysdkn_game_pay_jf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="可获积分: 0个"
+                        android:textColor="#ffffff"
+                        android:textSize="11sp" />
+
+                    <ImageView
+                        android:id="@+id/tysdkn_game_pay_jf_dialog"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:src="@drawable/tysdkn_wenhao" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tysdkn_game_pay_pay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="9dp"
+                android:layout_marginLeft="59dp"
+                android:text="1000.00元"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="11dp"
+                android:layout_marginLeft="9dp"
+                android:text="还需支付: "
+                android:textColor="#ffffff"
+                android:textSize="11sp" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="115dp"
+            android:text="选择支付方式"
+            android:textColor="#ff999999"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tysdkn_game_pay_yb_count_land"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="11dp"
+            android:layout_marginTop="115dp"
+            android:text="我的宇币: 0个"
+            android:textColor="#ff999999"
+            android:textSize="11sp" />
+
+        <!--<com.sdk.tysdk.ui.view.MySelectRelativeLayout-->
+        <!--android:id="@+id/tysdkn_myrelative_one"-->
+        <!--android:layout_width="113dp"-->
+        <!--android:layout_height="39dp"-->
+        <!--android:layout_marginTop="137dp"-->
+        <!--android:layout_marginLeft="9dp"-->
+        <!--&gt;-->
+
+        <!--</com.sdk.tysdk.ui.view.MySelectRelativeLayout>-->
+
+        <!--<com.sdk.tysdk.ui.view.MySelectRelativeLayout-->
+        <!--android:layout_width="113dp"-->
+        <!--android:layout_height="39dp"-->
+        <!--android:layout_marginTop="137dp"-->
+        <!--android:layout_marginRight="9dp"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--&gt;-->
+
+        <!--</com.sdk.tysdk.ui.view.MySelectRelativeLayout>-->
+
+
+        <!--<com.sdk.tysdk.ui.view.MySelectRelativeLayout-->
+        <!--android:layout_width="113dp"-->
+        <!--android:layout_height="39dp"-->
+        <!--android:layout_marginTop="186dp"-->
+        <!--android:layout_marginLeft="9dp"-->
+        <!--&gt;-->
+
+        <!--</com.sdk.tysdk.ui.view.MySelectRelativeLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:id="@+id/tysdkn_game_pay_no_land_zfb"
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="137dp"
+                    android:background="@drawable/tysdkn_recharge_type_select"
+                    android:clickable="true">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/tysdkn_recharge_zhifubao" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:text="支付宝支付"
+                            android:textColor="#ffffff"
+                            android:textSize="11sp" />
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:id="@+id/tysdkn_rl_root_img_zhifubao"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/tysdkn_rechargetype_select" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:id="@+id/tysdkn_game_pay_no_land_wx"
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="137dp"
+                    android:background="@drawable/tysdkn_recharge_type_select"
+                    android:clickable="true">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/tysdkn_recharge_wechat" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:text="微信支付"
+                            android:textColor="#ffffff"
+                            android:textSize="11sp" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/tysdkn_rl_root_img_wechat"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/tysdkn_rechargetype_select" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:id="@+id/tysdkn_game_pay_no_land_yb"
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="186dp"
+                    android:background="@drawable/tysdkn_recharge_type_select"
+                    android:clickable="true">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/tysdkn_recharge_yubi" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:text="宇币支付"
+                            android:textColor="#ffffff"
+                            android:textSize="11sp" />
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:id="@+id/tysdkn_rl_root_img_yubi"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/tysdkn_rechargetype_select" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:visibility="invisible">
+
+                <RelativeLayout
+                    android:layout_width="113dp"
+                    android:layout_height="39dp"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginTop="186dp"
+                    android:background="@drawable/tysdkn_recharge_type_select"
+                    android:clickable="true">
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12dp"
+                        android:background="@drawable/tysdkn_recharge_yubi" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="45dp"
+                        android:text="宇币支付"
+                        android:textColor="#ffffff"
+                        android:textSize="11sp" />
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/tysdkn_rechargetype_select" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="241dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <!--style="@style/stysdkn_recharge_cb"-->
+            <CheckBox
+                android:id="@+id/tysdkn_cb_choose_coupon"
+
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_marginLeft="11dp"
+                android:checked="true"
+                android:clickable="true" />
+
+            <TextView
+                android:id="@+id/tysdkn_tv_use_coupon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="请选择优惠券"
+                android:textColor="#ffffff"
+                android:textSize="11sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:clickable="true"
+                android:text="更改"
+                android:textColor="#30B8FF"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="235dp"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/tysdkn_tv_game_pay_change_discount"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_centerHorizontal="true"
+
+                    android:background="@drawable/tysdkn_recharge_type_select"
+                    android:clickable="true">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="7dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/tysdkn_recharge_icon_discount"
+                            android:layout_width="23dp"
+                            android:layout_height="15dp"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/tysdkn_recharge_icon_discount" />
+
+                        <TextView
+                            android:id="@+id/tysdkn_recharge_tv_cotent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"
+                            android:singleLine="true"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginRight="40dp"
+                            android:text="有 0 张优惠券可用"
+                            android:textColor="#ffffff"
+                            android:textSize="11sp" />
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:layout_width="5dp"
+                        android:layout_height="9dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/tysdkn_xs_login_right" />
+                    <TextView
+                        android:id="@+id/tysdkn_recharge_tv_discount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textSize="11sp"
+                        android:textColor="#F4340E"
+                        android:text=""
+                        android:layout_marginRight="25dp"
+                        android:layout_alignParentRight="true"
+                        />
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+
+            <TextView
+            android:id="@+id/tysdkn_tv_cz_integral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="260dp"
+            android:text="使用券可额外获得300积分"
+            android:textColor="#999999"
+            android:textSize="9sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/tysdkn_game_pay_no_land_topay"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="282dp"
+            android:background="@drawable/tysdkn_recharge_item_select"
+            android:text="宇币支付10.0元"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tysdkn_game_pay_vip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:visibility="gone"
+            android:layout_marginTop="327dp"
+            android:text="可获VIP经验: 10点"
+            android:textColor="#999999"
+            android:textSize="11sp" />
+
+        <ImageView
+            android:id="@+id/tysdkn_game_pay_vip_dialog"
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_marginLeft="111dp"
+            android:visibility="gone"
+            android:layout_marginTop="329dp"
+            android:src="@drawable/tysdkn_wenhao" />
+        </RelativeLayout>
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

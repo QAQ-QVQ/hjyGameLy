@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="default_dimColor">#B3000000</color>
+
+    <color name="sdk_colorPrimary">#fff</color>
+    <color name="sdk_colorPrimaryDark">#fff</color>
+    <color name="sdk_colorAccent">#fff</color>
+    <!--#6a70e7-->
+    <color name="sdk_theme">#3A90AD</color>
+    <color name="sdk_white">#ffffff</color>
+    <color name="sdk_black">#000000</color>
+    <color name="sdk_gray">#666666</color>
+
+    <color name="sdk_blue">#2F53E1</color>
+    <color name="sdk_purple">#A96AE7</color>
+    <color name="loginsdk_transparent">#00000000</color>
+
+    <color name="sdk_color_black">#000000</color>
+
+</resources>
+

@@ -1,0 +1,10 @@
+{
+    "project": [
+        {
+            "project_name": "project",
+            "class_name": "com.renard.project.sy501Project",
+            "description": "501wanSDK项目",
+            "version": "1.0.0"
+        }
+    ]
+}

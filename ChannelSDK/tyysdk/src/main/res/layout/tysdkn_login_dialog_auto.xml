@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tysdkn_login_root"
+    android:layout_width="330dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/tysdkn_edit_two_bg"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:paddingLeft="18dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/tysdkn_login_title" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:gravity="center"
+                android:text="天宇游戏"
+                android:textColor="#111111"
+                android:textSize="19sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="18dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="#d8d8d8" />
+
+        <TextView
+
+            android:layout_marginTop="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="一键登录游戏"
+            android:textColor="#4BC1FF"
+            android:textStyle="bold"
+            android:textSize="19dp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="152dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/tysdkn_game_account_atuo_bg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="32dp"
+            android:text="已为您自动生成账号"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+
+            />
+
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="9dp"
+            android:background="@drawable/tysdkn_game_account_auto" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/tysdkn_edit_input_bg"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:text="账号: "
+                android:textColor="#333333"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tysdkn_tv_auto_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="56dp"
+                android:text="saasfafas"
+                android:textColor="#333333"
+                android:textSize="15sp" />
+            <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="11dp"-->
+            <!--android:layout_marginLeft="16dp"-->
+            <!--android:layout_marginTop="11dp"-->
+            <!--android:src="@drawable/tysdkn_phone"/>-->
+
+            <!--<EditText-->
+            <!--android:id="@+id/tysdkn_login_username"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@null"-->
+            <!--android:hint="请输入手机号/用户名"-->
+            <!--android:paddingLeft="5dp"-->
+            <!--android:paddingRight="30dp"-->
+            <!--android:selectAllOnFocus="true"-->
+            <!--android:singleLine="true"-->
+            <!--android:textColor="#000000"-->
+            <!--android:textColorHint="#c8c8c8"-->
+            <!--android:textSize="14dp"/>-->
+
+            <!--<ImageView-->
+            <!--android:id="@+id/tysdkn_login_username_s"-->
+            <!--android:layout_width="14dp"-->
+            <!--android:layout_height="8dp"-->
+            <!--android:focusable="true"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingRight="10dp"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:scaleType="center"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:background="@drawable/tysdkn_xs_login_up"/>-->
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="40dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/tysdkn_edit_input_bg"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:text="密码: "
+            android:textColor="#333333"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tysdkn_tv_auto_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="56dp"
+            android:text="123456"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+    </RelativeLayout>
+    <!--<LinearLayout-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_width="300dp"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:layout_marginTop="50dp"-->
+    <!--android:background="@drawable/tysdkn_edit_input_bg"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<ImageView-->
+
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginBottom="11dp"-->
+    <!--android:layout_marginLeft="13dp"-->
+    <!--android:layout_marginTop="11dp"-->
+    <!--android:src="@drawable/tysdkn_login_password"/>-->
+
+    <!--<EditText-->
+    <!--android:id="@+id/tysdkn_login_pass"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:background="@null"-->
+    <!--android:hint="请输入游戏密码"-->
+    <!--android:inputType="textPassword"-->
+    <!--android:maxLines="1"-->
+    <!--android:paddingLeft="5dp"-->
+    <!--android:selectAllOnFocus="true"-->
+    <!--android:textColor="#818181"-->
+    <!--android:textColorHint="#c8c8c8"-->
+    <!--android:textSize="14sp"/>-->
+
+
+    <!--<ImageView-->
+    <!--android:id="@+id/tysdkn_login_pass_show"-->
+    <!--android:layout_width="18dp"-->
+    <!--android:layout_height="11dp"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:paddingRight="10dp"-->
+    <!--android:layout_marginRight="10dp"-->
+    <!--android:background="@drawable/tysdkn_login_open"/>-->
+    <!--</LinearLayout>-->
+
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+    <!--<TextView-->
+    <!--android:id="@+id/tysdkn_login_commit"-->
+    <!--android:layout_width="300dp"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:layout_marginTop="166dp"-->
+    <!--android:background="@drawable/tysdkn_login_in_bt"-->
+    <!--android:gravity="center"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:text="登录"-->
+    <!--android:textColor="#ffffff"-->
+    <!--android:textSize="18dp"/>-->
+    <!--</RelativeLayout>-->
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="224dp"-->
+    <!--&gt;-->
+    <!--<LinearLayout-->
+
+    <!--android:layout_marginLeft="25dp"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tysdkn_login_zc"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:paddingBottom="10dp"-->
+    <!--android:paddingRight="10dp"-->
+    <!--android:paddingTop="10dp"-->
+    <!--android:text="快速注册"-->
+    <!--android:textColor="#4BC1FF"-->
+    <!--android:textSize="14sp"/>-->
+    <!--<View-->
+    <!--android:layout_width="1dp"-->
+    <!--android:layout_height="12dp"-->
+    <!--android:background="#4BC1FF"-->
+    <!--android:paddingTop="15dp"-->
+    <!--android:paddingBottom="10dp"-->
+    <!--android:layout_marginTop="13dp"-->
+    <!--/>-->
+    <!--<TextView-->
+    <!--android:id="@+id/tysdkn_login_wj"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="#ffffff"-->
+    <!--android:paddingBottom="10dp"-->
+    <!--android:paddingLeft="10dp"-->
+    <!--android:paddingTop="10dp"-->
+    <!--android:text="忘记密码?"-->
+    <!--android:textColor="#4BC1FF"-->
+    <!--android:textSize="14sp"/>-->
+    <!--</LinearLayout>-->
+    <!--<RelativeLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--&gt;-->
+    <!--<TextView-->
+    <!--android:id="@+id/tysdkn_login_back_right"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="返回"-->
+    <!--android:textColor="#ff111111"-->
+    <!--android:textSize="14dp"-->
+    <!--android:gravity="center"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_marginRight="40dp"-->
+    <!--/>-->
+    <!--<ImageView-->
+    <!--android:layout_width="7dp"-->
+    <!--android:layout_height="12dp"-->
+    <!--android:background="@drawable/tysdkn_back_right"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_marginRight="25dp"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--/>-->
+    <!--</RelativeLayout>-->
+    <!--</RelativeLayout>-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="18dp">
+
+        <TextView
+            android:id="@+id/tysdkn_tv_auto_recode"
+            android:layout_width="146dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/tysdkn_login_login_bg"
+            android:gravity="center"
+            android:text="保存截图"
+            android:textColor="#FFF"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tysdkn_tv_auto_enter"
+            android:layout_width="146dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/tysdkn_login_auto_bg"
+            android:gravity="center"
+            android:text="进入游戏"
+            android:textColor="#FFF"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+
+</LinearLayout>
+ 
+

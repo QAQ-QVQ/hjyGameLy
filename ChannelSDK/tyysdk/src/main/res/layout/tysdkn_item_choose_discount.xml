@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="3dp"
+    android:paddingLeft="6dp"
+    android:paddingRight="6dp"
+    android:paddingTop="3dp">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/tysdkn_ll_choose_choose_coupon"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/tysdkn_bg_yuanjiao_1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:id="@+id/tysdkn_rl_choose_coupon_bg"
+                android:layout_width="65dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="9dp"
+                android:background="@drawable/tysdkn_green_discount_bg"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tysdkn_tv_choose_coupon_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:text="100"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tysdkn_tv_choose_coupon_value_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_toLeftOf="@id/tysdkn_tv_choose_coupon_value"
+                    android:text="￥"
+                    android:textColor="@android:color/white"
+                    android:textSize="8sp"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tysdkn_tv_choose_coupon_value_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_toRightOf="@id/tysdkn_tv_choose_coupon_value"
+                    android:text="%"
+                    android:layout_marginLeft="1dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="8sp"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tysdkn_tv_choose_coupon_condition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tysdkn_tv_choose_coupon_value"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:text="充值任意金额"
+                    android:textColor="@android:color/white"
+                    android:textSize="8sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tysdkn_tv_choose_choose_coupon_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="优惠券名称"
+                    android:textColor="#ffffff"
+                    android:textSize="9sp" />
+
+                <TextView
+                    android:id="@+id/tysdkn_tv_choose_choose_coupon_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:ellipsize="end"
+                    android:text="优惠券描述"
+                    android:textColor="#999999"
+                    android:textSize="7sp" />
+
+                <TextView
+                    android:id="@+id/tysdkn_tv_choose_choose_coupon_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:ellipsize="end"
+                    android:lines="2"
+                    android:text="优惠券描述"
+                    android:textColor="#999999"
+                    android:textSize="7sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/tysdkn_cb_choose_choose_coupon"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/tysdkn_discount_selector"
+            android:button="@null"
+            android:clickable="false"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            tools:checked="true" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/tysdkn_discount_img_bg"
+        android:layout_width="41dp"
+        android:layout_height="31dp"
+        android:background="@drawable/tysdkn_discount_icon_bg"
+        />
+</RelativeLayout>
+</LinearLayout>

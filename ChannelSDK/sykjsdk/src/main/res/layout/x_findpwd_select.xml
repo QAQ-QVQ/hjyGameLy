@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/x_findpwd_select_view"
+    style="@style/x_common_horizontal_view" >
+
+    <RelativeLayout
+        style="@style/x_common_title">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/x_findpwd_des"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/x_common_textsize_l" />
+        
+        
+	    <LinearLayout
+	           android:id="@+id/x_findpwd_close"
+	           android:layout_width="wrap_content"
+	           android:layout_height="fill_parent"
+	           android:orientation="horizontal" >
+	           <ImageView
+	               android:layout_width="wrap_content"
+	               android:layout_height="wrap_content"
+	               android:layout_marginLeft="20dp"
+	               android:layout_gravity="center_vertical"
+	               android:src="@drawable/x_ic_back" />
+	    </LinearLayout>        
+        
+    </RelativeLayout>
+
+    <View
+        style="@style/x_common_divide"
+        android:layout_height="40dp" >
+    </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:id="@+id/x_findpwd_phonefind"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/x_common_inputbox"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/x_common_iphone"
+                android:contentDescription="@string/x_findpwd_des" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="7dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="7dp"
+                android:layout_weight="1"
+                android:text="@string/x_findpwd_phonefind"
+                android:textColor="@color/x_login_namepwd"
+                android:textSize="@dimen/x_common_textsize_m" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/x_login_accountlist_img_rotate"
+                android:contentDescription="@string/x_findpwd_des" />
+        </LinearLayout>
+
+        <View
+            style="@style/x_common_divide"
+            android:layout_height="25dp" >
+        </View>
+
+        <LinearLayout
+            android:id="@+id/x_findpwd_helpfind"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/x_common_inputbox"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/x_findpwd_customer"
+                android:contentDescription="@string/x_findpwd_des" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="7dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="7dp"
+                android:layout_weight="1"
+                android:text="@string/x_findpwd_helpfind"
+                android:textColor="@color/x_login_namepwd"
+                android:textSize="@dimen/x_common_textsize_m" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/x_login_accountlist_img_rotate"
+                android:contentDescription="@string/x_findpwd_des" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <View
+        style="@style/x_common_divide"
+        android:layout_height="40dp" >
+    </View>
+
+</LinearLayout>

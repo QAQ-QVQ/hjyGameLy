@@ -1,0 +1,261 @@
+<?xml version="1.0"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.renard.sdk">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission android:name="org.simalliance.openmobileapi.SMARTCARD" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="cn.swiftpass.wxpay.permission.MMOAUTH_CALLBACK" />
+
+    <uses-permission android:name="cn.swiftpass.wxpay.permission.MM_MESSAGE" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <uses-feature android:name="android.hardware.nfc.hce" />
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <uses-permission android:name="android.webkit.permission.PLUGIN" />
+
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <!-- 在SDCard中创建与删除文件权限 -->
+
+
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- 照相的权限 -->
+
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.hardware.camera.autofocus" />
+
+    <!-- 读取短信验证码可选 -->
+
+
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+
+    <uses-permission android:name="android.permission.READ_SMS" />
+
+    <!-- 银联新增权限 -->
+
+    <uses-permission android:name="android.permission.NFC" />
+
+    <!--在Activity中重写onConfigurationChanged-->
+
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <!-- //允许访问震动设备 -->
+
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- //允许录音 -->
+
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <!-- //允许使用摄像头 -->
+
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- //允许访问精准的地址 -->
+
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- //允许一个程序获取信息有关当前或最近运行的任务，一个缩略的任务状态，是否活动等等 -->
+
+
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <!-- //允许程序改变WIFI状态 -->
+
+
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <!-- //允许程序开机自动运行 -->
+
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <!-- 这个权限用于进行网络定位 -->
+
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <!-- SD卡读取权限，用户写入离线定位数据 -->
+
+
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
+
+    <application>
+
+        <!--<activity-->
+            <!--android:name="com.tygrm.sdk.core.TYRSplashActvity"-->
+            <!--android:launchMode="singleInstance"-->
+            <!--android:screenOrientation="landscape"-->
+            <!--&gt;-->
+            <!--<meta-data-->
+                <!--android:name="JumpGameActivity"-->
+                <!--android:value="com.renard.sdk"/>-->
+            <!--<meta-data-->
+                <!--android:name="NeedSplash"-->
+                <!--android:value="need"/>-->
+
+        <!--</activity>-->
+        <!--横竖屏切换检测必须要 加入-->
+
+        <activity
+            android:name="com.sdk.tysdk.ui.TYActivity"
+            android:configChanges="orientation|keyboard|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="adjustPan|adjustResize"/>
+
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden"></activity>
+
+        <activity
+            android:name="com.switfpass.pay.activity.QQWapPayWebView"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <activity
+            android:name="com.swiftfintech.pay.activity.UnifiedPay"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <service android:name="com.sdk.tysdk.ui.TYAppService" />
+
+        <!--微信WAP版支付 android:windowSoftInputMode="stateHidden"-->
+
+
+        <activity
+            android:name="com.ipaynow.plugin.inner_plugin.wechatwp.activity.WeChatNotifyActivity"
+            android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.Dialog" />
+
+        <activity
+            android:name="com.ipaynow.plugin.presenter.PayMethodActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.Dialog"></activity>
+
+        <activity
+            android:name="com.sdk.tysdk.wxapi.WXEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Translucent" />
+
+
+
+        <!--<activity-->
+            <!--android:name="com.tencent.tauth.AuthActivity"-->
+            <!--android:launchMode="singleTask"-->
+            <!--android:noHistory="true">-->
+
+
+
+            <!--<intent-filter>-->
+
+                <!--<action android:name="android.intent.action.VIEW" />-->
+
+                <!--<category android:name="android.intent.category.DEFAULT" />-->
+
+                <!--<category android:name="android.intent.category.BROWSABLE" />-->
+
+                <!--<data android:scheme="tencent1106054695" />-->
+
+            <!--</intent-filter>-->
+
+        <!--</activity>-->
+
+        <!--<activity-->
+            <!--android:name="com.tencent.connect.common.AssistActivity"-->
+            <!--android:configChanges="orientation|keyboardHidden"-->
+            <!--android:launchMode="singleTask"-->
+            <!--android:screenOrientation="behind"-->
+            <!--android:theme="@android:style/Theme.Translucent.NoTitleBar" />-->
+
+        <!--适应全面屏-->
+
+
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.1" />
+
+    </application>
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+</manifest>

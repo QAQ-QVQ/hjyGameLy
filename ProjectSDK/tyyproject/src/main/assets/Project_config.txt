@@ -1,0 +1,10 @@
+{
+    "project": [
+        {
+            "project_name": "project",
+            "class_name": "com.renard.project.TyyProject",
+            "description": "天宇游SDK项目",
+            "version": "1.0.0"
+        }
+    ]
+}

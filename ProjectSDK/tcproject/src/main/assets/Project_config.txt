@@ -1,0 +1,10 @@
+{
+    "project": [
+        {
+            "project_name": "project",
+            "class_name": "com.renard.project.tcProject",
+            "description": "天橙SDK项目",
+            "version": "1.0.0"
+        }
+    ]
+}

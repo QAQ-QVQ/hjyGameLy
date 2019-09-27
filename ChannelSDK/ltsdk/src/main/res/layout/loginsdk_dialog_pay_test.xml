@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/loginsdk_bg_full_ffffff_r4"
+    android:orientation="vertical"
+    android:paddingTop="15dp"
+    android:paddingBottom="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="5dp">
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/close"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:text="充值金额："
+            style="@style/tvPaymentItem"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"/>
+
+        <TextView
+            android:id="@+id/tv_payment_money"
+            android:text="00.00"
+            android:layout_toRightOf="@id/tv_money"
+            style="@style/tvPaymentItemHighlight"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"/>
+
+        <TextView
+            android:id="@+id/tv_current_account"
+            android:text="当前账号："
+            android:layout_below="@id/tv_money"
+            style="@style/tvPaymentItem"/>
+
+        <TextView
+            android:id="@+id/tv_payment_current_account"
+            android:text="xxxxxxxxx"
+            android:layout_below="@id/tv_payment_money"
+            android:layout_toRightOf="@id/tv_current_account"
+            style="@style/tvPaymentItemHighlight"/>
+
+        <TextView
+            android:id="@+id/tv_liubi"
+            android:text="剩余六币："
+            android:layout_below="@id/tv_current_account"
+            style="@style/tvPaymentItem"/>
+
+        <TextView
+            android:id="@+id/tv_payment_liubi"
+            android:text="701"
+            android:layout_below="@id/tv_payment_current_account"
+            android:layout_toRightOf="@id/tv_liubi"
+            style="@style/tvPaymentItemHighlight" />
+
+        <TextView
+            android:id="@+id/tv_payment_liubi_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_payment_liubi"
+            android:layout_toRightOf="@id/tv_payment_liubi"
+            android:text="个(10个6币=1元)"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/colorBlack" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="left"
+        android:text="选择支付方式"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rb_wx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:checked="true"
+                android:drawableLeft="@drawable/pay_wechat"
+                android:drawableRight="@drawable/loginsdk_selector_pay"
+                android:drawablePadding="10dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="微信支付"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/rb_aliy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableLeft="@drawable/pay_alipay"
+                android:drawableRight="@drawable/loginsdk_selector_pay"
+                android:drawablePadding="10dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="支付宝"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/rb_liubi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableLeft="@drawable/pay_liu_bi"
+                android:drawableRight="@drawable/loginsdk_selector_pay"
+                android:drawablePadding="10dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="六币支付"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/loginsdk_bg_submit"
+        android:text="去支付"
+        android:textColor="#ffffff"
+        android:textSize="18dp" />
+
+</LinearLayout>

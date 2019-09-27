@@ -1,0 +1,66 @@
+include ':app',
+        //项目API
+        ':SDKAPI',
+        //基础库
+        ':common',
+        //项目Project
+        ':hjyproject', ':tyyproject',':testproject',':sy233project',':xtproject',':ynproject',':qgproject', ':yxfproject', ':syproject',':yyproject', ':tcproject', ':sy501project',':ltproject',':sykjproject',
+        //渠道插件
+        ':hjysdk', ':tyysdk',':testsdk',':sy233sdk',':xtsdk',':ynsdk',':qgsdk', ':yxfsdk',':sysdk',':yysdk', ':tcsdk', ':sy501sdk', ':sysdk', ':ltsdk',':sykjsdk',
+        //支付插件
+        ':alipay', ':wechat',':issuesdk',
+        //功能插件
+        ':initmanager', ':account', ':purchase'
+/***
+ * 后续新建一个Library Module 后拷贝到对应的目录就可以了,
+ * 然后替换成对应的工程目录，或者新添加的工程目录。Clean下
+ */
+//项目API工程,可根据需求修改
+project(':SDKAPI').projectDir = new File('SDKAPI')
+
+
+//项目Project工程,可根据需求修改
+project(':hjyproject').projectDir = new File('ProjectSDK/hjyproject')
+project(':tyyproject').projectDir = new File('ProjectSDK/tyyproject')
+project(':sy233project').projectDir = new File('ProjectSDK/sy233project')
+project(':xtproject').projectDir = new File('ProjectSDK/xtproject')
+project(':testproject').projectDir = new File('ProjectSDK/testproject')
+project(':ynproject').projectDir = new File('ProjectSDK/ynproject')
+project(':qgproject').projectDir = new File('ProjectSDK/qgproject')
+project(':yxfproject').projectDir = new File('ProjectSDK/yxfproject')
+project(':syproject').projectDir = new File('ProjectSDK/syproject')
+project(':yyproject').projectDir = new File('ProjectSDK/yyproject')
+project(':tcproject').projectDir = new File('ProjectSDK/tcproject')
+project(':sy501project').projectDir = new File('ProjectSDK/sy501project')
+project(':ltproject').projectDir = new File('ProjectSDK/ltproject')
+project(':sykjproject').projectDir = new File('ProjectSDK/sykjproject')
+
+//项目Channel工程,可根据需求修改
+project(':hjysdk').projectDir = new File('ChannelSDK/hjysdk')
+project(':tyysdk').projectDir = new File('ChannelSDK/tyysdk')
+project(':sy233sdk').projectDir = new File('ChannelSDK/sy233sdk')
+project(':xtsdk').projectDir = new File('ChannelSDK/xtsdk')
+project(':testsdk').projectDir = new File('ChannelSDK/testsdk')
+project(':ynsdk').projectDir = new File('ChannelSDK/ynsdk')
+project(':qgsdk').projectDir = new File('ChannelSDK/qgsdk')
+project(':yxfsdk').projectDir = new File('ChannelSDK/yxfsdk')
+project(':sysdk').projectDir = new File('ChannelSDK/sysdk')
+project(':yysdk').projectDir = new File('ChannelSDK/yysdk')
+project(':tcsdk').projectDir = new File('ChannelSDK/tcsdk')
+project(':sy501sdk').projectDir = new File('ChannelSDK/sy501sdk')
+project(':sysdk').projectDir = new File('ChannelSDK/sysdk')
+project(':ltsdk').projectDir = new File('ChannelSDK/ltsdk')
+project(':sykjsdk').projectDir = new File('ChannelSDK/sykjsdk')
+
+//反射注入插件
+project(':initmanager').projectDir = new File('Manager/initmanager')
+project(':account').projectDir = new File('Manager/account')
+project(':purchase').projectDir = new File('Manager/purchase')
+
+//支付插件
+project(':alipay').projectDir = new File('PaySDK/alipay')
+project(':wechat').projectDir = new File('PaySDK/wechat')
+project(':issuesdk').projectDir = new File('PaySDK/issuesdk')
+
+//基础库
+project(':common').projectDir = new File('common')

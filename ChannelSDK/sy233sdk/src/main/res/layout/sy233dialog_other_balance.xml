@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="10dp"
+    android:background="#B4000000"
+    >
+
+    <LinearLayout
+        android:id="@+id/popu_contentview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/sy233popup_bg"
+        android:fitsSystemWindows="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <include layout="@layout/sy233activity_header" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sy233popup_bottom_bg"
+                android:orientation="vertical"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <FrameLayout
+                    android:id="@+id/sy233ll_balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="余额"
+                                android:textColor="@color/sy233blacktextcolor"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/sy233tv_remain_balance"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="(￥)"
+                                android:textColor="@color/sy233graytextcolor"
+                                android:textSize="13sp" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/sy233ll_coupon"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right|center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/sy233tv_balance"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="2dp"
+                                android:paddingRight="2dp"
+                                android:text="-￥"
+                                android:textColor="@color/sy233blacktextcolor"
+                                android:textSize="15sp" />
+
+                            <CheckBox
+                                android:id="@+id/sy233cb_balance"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="2dp"
+                                android:button="@drawable/sy233switch_bg" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="bottom"
+                        android:background="@color/sy233line" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/sy233ll_platform"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="平台币"
+                                android:textColor="@color/sy233blacktextcolor"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/sy233tv_remain_platform"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="(￥)"
+                                android:textColor="@color/sy233graytextcolor"
+                                android:textSize="13sp" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right|center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/sy233tv_platform"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="2dp"
+                                android:paddingRight="2dp"
+                                android:text="-￥"
+                                android:textColor="@color/sy233blacktextcolor"
+                                android:textSize="15sp" />
+
+                            <CheckBox
+                                android:id="@+id/sy233cb_platform"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="2dp"
+                                android:button="@drawable/sy233switch_bg" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="bottom"
+                        android:background="@color/sy233line" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/sy233ll_private_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="代币"
+                                android:textColor="@color/sy233blacktextcolor"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/sy233tv_remain_private_money"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="(￥)"
+                                android:textColor="@color/sy233graytextcolor"
+                                android:textSize="13sp" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right|center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/sy233tv_private_money"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="2dp"
+                                android:paddingRight="2dp"
+                                android:text="-￥"
+                                android:textColor="@color/sy233blacktextcolor"
+                                android:textSize="15sp" />
+
+                            <CheckBox
+                                android:id="@+id/sy233cb_private_money"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="2dp"
+                                android:button="@drawable/sy233switch_bg" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="bottom"
+                        android:background="@color/sy233line" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/sy233tv_alert"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="20dp"
+                    android:text="温馨提示：若使用代币，将取消折扣"
+                    android:textColor="@color/sy233graytextcolor"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/sy233bt_ok"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/sy233bt_detail_down_bg"
+                    android:text="确定"
+                    android:textColor="@android:color/white"
+                    android:textSize="18dp" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>
+

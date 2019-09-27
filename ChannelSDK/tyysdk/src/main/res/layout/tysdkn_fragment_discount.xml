@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--android:background="#55020202"-->
+
+    <include layout="@layout/tysdkn_progressbar" />
+    <!--<ProgressBar-->
+    <!--android:id="@+id/tysdkn_progressbar"-->
+    <!--style="@android:style/Widget.ProgressBar"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_marginTop="50dp"-->
+    <!--android:visibility="gone"-->
+    <!--android:indeterminateDrawable="@drawable/tysdkn_progressbar_rotate" />-->
+    <LinearLayout
+        android:id="@+id/tysdkn_ll_nothing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="80dp"
+            android:background="@drawable/tysdkn_nothing" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="暂无优惠"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/tysdkn_lv_discount"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:divider="@null"
+        android:scrollbars="none" />
+
+</LinearLayout>

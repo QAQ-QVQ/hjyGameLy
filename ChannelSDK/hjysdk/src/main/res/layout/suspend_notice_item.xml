@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#F5F5F5"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/notice_time"
+        android:text="时间戳"
+        android:textSize="14sp"
+        android:textColor="@color/sdk_gray"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:padding="16dp"
+        android:background="@color/sdk_white"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+        <TextView
+            android:id="@+id/notice_title"
+            android:text="《屠龙破晓》已上线，每天10点开启新区哦！"
+            android:textSize="14sp"
+            android:textColor="@color/sdk_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e7e7e7"
+            />
+        <TextView
+            android:id="@+id/notice_content"
+            android:text="游戏拥有战宠召唤、激斗BOSS爆神装、转生神翼、万人攻城等开放式玩法，迅速激起你的青春回忆！还等什么？快来和兄弟一起，一刀破晓，重铸霸业！"
+            android:textSize="12sp"
+            android:textColor="@color/sdk_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/suspend_vip_sdv"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_alignParentBottom="true"
+            />
+    </LinearLayout>
+</RelativeLayout>

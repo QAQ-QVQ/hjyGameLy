@@ -1,0 +1,43 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 26
+
+
+
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+//    compile project(path: ':testproject')
+    compile project(path: ':common')
+//    compile project(path: ':ynproject')
+//    compile project(path: ':syproject')
+//    compile project(path: ':qgproject')
+    compile project(path: ':hjyproject')
+//    compile project(path: ':ltproject')
+//    compile project(path: ':tyyproject')
+//    compile project(path: ':yxfproject')
+//    compile project(path: ':sy233project')
+//    compile project(path: ':sy501project')
+//    compile project(path: ':xtproject')
+//    compile project(path: ':yyproject')
+//    compile project(path: ':tcproject')
+//    compile project(path: ':sykjproject')
+}

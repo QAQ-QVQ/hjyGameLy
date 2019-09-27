@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">hjyGameSs</string>
+
+    <string name="open_bigbang">关闭分词</string>
+    <string name="close_bigbang">开启分词</string>
+
+
+    <string name="float_view_hide">全能分词悬浮窗（隐藏状态）</string>
+    <string name="float_view">展开悬浮窗功能</string>
+    <string name="float_view_to_hide">收起悬浮窗</string>
+    <string name="notify_copy_title">全局复制</string>
+    <string name="notify_srceen_cap">截屏OCR</string>
+
+    <string name="face_book">Facebook</string>
+    <string name="alipay">Alipay</string>
+    <string name="ding_ding">Ding</string>
+    <string name="moments">Moments</string>
+    <string name="we_chat">微信</string>
+    <string name="qq">QQ</string>
+    <string name="friend">朋友圈</string>
+    <string name="sina">新浪微博</string>
+
+    <string name="collect">Collect</string>
+    <string name="night">Night</string>
+    <string name="font">Font</string>
+    <string name="block">Block</string>
+    <string name="report">Report</string>
+
+    <string name="options">Options</string>
+    <string name="cancel">Cancel</string>
+</resources>

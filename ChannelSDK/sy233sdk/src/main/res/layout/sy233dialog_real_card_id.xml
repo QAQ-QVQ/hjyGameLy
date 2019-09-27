@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical"
+             android:paddingBottom="10dp"
+             android:paddingLeft="20dp"
+             android:paddingRight="20dp"
+             android:paddingTop="10dp"
+
+    >
+
+    <LinearLayout
+        android:id="@+id/popu_contentview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/sy233popup_bg"
+        android:fitsSystemWindows="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <include layout="@layout/sy233activity_header"/>
+       <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:background="@drawable/sy233popup_bottom_bg"
+                android:orientation="vertical"
+                android:paddingBottom="15dp"
+                >
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="20dp"
+               android:text="根据《网络游戏管理暂行方法》的要求，所有233游戏用户需要实名认证，未能及时实名认证的用户，将限制部分游戏功能！"
+               android:textColor="@color/sy233black"
+               android:textSize="12sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/sy233charge_info_bg"
+                    android:gravity="center_vertical"
+                    android:padding="5dp">
+
+                    <EditText
+                        android:textSize="14sp"
+                        android:id="@+id/sy233ed_name"
+                        style="@style/sy233register_edit"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_toRightOf="@+id/temp"
+                        android:hint="真实姓名"
+                        android:inputType="text"
+                        android:maxLength="16"/>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/sy233ll_pwd_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/sy233charge_info_bg"
+                    android:gravity="center_vertical"
+                    android:padding="5dp">
+                    <EditText
+                        android:textSize="14sp"
+                        android:id="@+id/sy233ed_card_id"
+                        style="@style/sy233register_edit"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_toLeftOf="@id/ib_pwd_show"
+                        android:layout_toRightOf="@+id/temp3"
+                        android:hint="身份证号"
+                        android:inputType="text"
+                        android:maxLength="18"/>
+
+                </RelativeLayout>
+
+
+                <Button
+                    android:id="@+id/bt_commit"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/sy233bt_detail_down_bg"
+                    android:text="实名认证"
+                    android:textColor="@android:color/white"
+                    android:textSize="16dp"/>
+
+            </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>
+

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+       >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="经典还原，热血复古手游"
+                android:textSize="15dp"
+                android:textColor="#333333"
+                />
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开服时间：2018/04/05"
+                android:layout_marginTop="3dp"
+                android:textSize="12dp"
+                android:textColor="#999999"
+                />
+            <TextView
+                android:id="@+id/tv_qufu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="游戏区服：土城36区"
+                android:layout_marginTop="2dp"
+                android:textSize="12dp"
+                android:textColor="#999999"
+                />
+            <TextView
+                android:id="@+id/tv_con"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="激战世界，啊可接受的拉肯定会爱江山代理费爱上多了阿金书店拉三等奖阿里卡收到货阿斯加德发觉到付好了的法拉盛电费卡拉集上地方好垃圾收电费卡拉集上砥砺奋进爱上第六届开发爱上邓丽君发了数据库的发送还打飞机啊束带结发阿拉斯加地方"
+                android:layout_marginTop="10dp"
+                android:textSize="12dp"
+                android:lineSpacingExtra="4dp"
+                android:textColor="#333333"
+                />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
